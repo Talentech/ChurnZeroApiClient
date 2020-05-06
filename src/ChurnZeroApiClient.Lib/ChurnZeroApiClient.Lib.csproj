@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>ChurnZeroApiClient</PackageId>
+    <Authors>Tomasz Margalski</Authors>
+    <Company>Talentech</Company>
+    <Product>API Client for ChurnZero API</Product>
+    <Description>.NET Standard API Client for ChurnZero API</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseExpression></PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projekty\Talentech\ChurnZeroApiClient\src\ChurnZeroApiClient.Lib\ChurnZeroApiClient.Lib.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
