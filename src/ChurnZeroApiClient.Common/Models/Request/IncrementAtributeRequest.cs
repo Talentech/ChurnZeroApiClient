@@ -4,6 +4,7 @@ namespace ChurnZeroApiClient.Models.Request
 {
     public class IncrementAttributeRequest : BaseRequest, IActionRequest
     {
+        [QueryParamName("action")]
         public string ActionName => "incrementAttribute";
 
         /// <summary>

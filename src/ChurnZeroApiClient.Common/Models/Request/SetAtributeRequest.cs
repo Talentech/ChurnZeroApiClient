@@ -4,6 +4,7 @@ namespace ChurnZeroApiClient.Models.Request
 {
     public class SetAttributeRequest : BaseRequest, IActionRequest
     {
+        [QueryParamName("action")]
         public string ActionName => "setAttribute";
 
         /// <summary>

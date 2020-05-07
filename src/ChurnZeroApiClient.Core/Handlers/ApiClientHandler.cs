@@ -7,6 +7,7 @@ using Microsoft.Extensions.Options;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.Net;
+using ChurnZeroApiClient.Models.Response;
 
 namespace ChurnZeroApiClient.Core
 {
@@ -32,7 +33,7 @@ namespace ChurnZeroApiClient.Core
 
                 await CheckResponse(requestUri, responseMessage);
 
-                return JsonConvert.DeserializeObject<TOut>(await responseMessage.Content.ReadAsStringAsync());
+                return (TOut)(object)new BaseResponse { Status = responseMessage.StatusCode };
             }
             catch (WebException ex)
             {
@@ -53,7 +54,7 @@ namespace ChurnZeroApiClient.Core
 
                 await CheckResponse(requestUri, responseMessage);
 
-                return JsonConvert.DeserializeObject<T>(await responseMessage.Content.ReadAsStringAsync());
+                return (T)(object)new BaseResponse { Status = responseMessage.StatusCode };
             }
             catch (WebException ex)
             {

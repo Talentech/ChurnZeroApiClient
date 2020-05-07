@@ -4,6 +4,7 @@ namespace ChurnZeroApiClient.Models.Request
 {
     public class TrackEventRequest : BaseRequest, IActionRequest
     {
+        [QueryParamName("action")]
         public string ActionName => "trackEvent";
 
         /// <summary>
