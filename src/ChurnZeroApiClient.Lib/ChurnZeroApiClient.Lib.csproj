@@ -15,4 +15,8 @@
     <DocumentationFile>C:\Projekty\Talentech\ChurnZeroApiClient\src\ChurnZeroApiClient.Lib\ChurnZeroApiClient.Lib.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChurnZeroApiClient.Core\ChurnZeroApiClient.Core.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -4,5 +4,30 @@
         <name>ChurnZeroApiClient.Lib</name>
     </assembly>
     <members>
+        <member name="M:ChurnZeroApiClient.IChurnZeroClient.TrackEventAsync(ChurnZeroApiClient.Models.Request.TrackEventRequest)">
+            <summary>
+             Track an event
+            </summary>
+            <param name="model">TrackEventRequest</param>
+            <returns>dynamic json</returns>
+        </member>
+        <member name="M:ChurnZeroApiClient.IChurnZeroClient.SetAttributeAsync(ChurnZeroApiClient.Models.Request.SetAttributeRequest)">
+            <summary>
+             Set Attribute on Account or Contact
+             Attributes about the account or features can be tracked in ChurnZero by using the setAttribute method. 
+             Attributes can be set one at a time or in batch via a document.
+            </summary>
+            <param name="model">SetAttributeRequest</param>
+            <returns>dynamic json</returns>
+        </member>
+        <member name="M:ChurnZeroApiClient.IChurnZeroClient.IncrementAttributeAsync(ChurnZeroApiClient.Models.Request.IncrementAttributeRequest)">
+            <summary>
+             Increment Attribute on Account or Contact
+             Numeric attribues can be incremented via the incrementAttriubute Method. 
+             Like the setAttribute method, numeric values can be incremented one at a time or batch via a document.
+            </summary>
+            <param name="model">IncrementAttributeRequest</param>
+            <returns>dynamic json</returns>
+        </member>
     </members>
 </doc>

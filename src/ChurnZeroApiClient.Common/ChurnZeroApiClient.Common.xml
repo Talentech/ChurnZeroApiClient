@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChurnZeroApiClient.Common</name>
+    </assembly>
+    <members>
+        <member name="P:ChurnZeroApiClient.Models.Request.BaseRequest.AccountExternalId">
+            <summary>
+            The AccountExternalID is your unique record to identify your account. This ID should be in your CRM.
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.BaseRequest.ContactExternalId">
+            <summary>
+            The contactExternalId must be unique within the account. 
+            This could be a email address, a unique record that is also contained in your CRM, or the ID of the contact record of your CRM.
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.IActionRequest.ActionName">
+            <summary>
+            Action name from API
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.IncrementAttributeRequest.Entity">
+            <summary>
+            (Required)- Can be either 'contact' or 'account'
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.IncrementAttributeRequest.Name">
+            <summary>
+            (Required)- Name of the field to be updated
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.IncrementAttributeRequest.Value">
+            <summary>
+            (Required)- Value to add to current value (can be positive or negative).
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.SetAttributeRequest.Entity">
+            <summary>
+            (Required)- Can be either 'contact' or 'account'
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.SetAttributeRequest.Name">
+            <summary>
+            (Required)- Name of the field to be updated
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.SetAttributeRequest.Value">
+            <summary>
+            (Required)- New value of attibute.
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.TrackEventRequest.EventName">
+            <summary>
+            (required)- This is the unique name of the event (i.e Sent Blog Post). 
+            If the Event Name is not found it will be created.
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.TrackEventRequest.Description">
+            <summary>
+            (optional)- A description of the Event (i.e Blog Title)
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.TrackEventRequest.Quantity">
+            <summary>
+            (optional)- The number related to this event (Commonly used to track things like email sent, etc)
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Models.Request.TrackEventRequest.Customfields">
+            <summary>
+             (optional)-Additional custom fields in a name/value pair. 
+             Important Note: At this time, custom fields cannot be created on the fly. 
+             Please make sure to request any required custom field(s) before attempting to send any data. 
+             Requests can be made through your ChurnZero Implementation Specialist or by reaching out to support@churnzero.net.
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Common.Settings.ApiSettings.ApiBaseUrl">
+            <summary>
+            If you are located in Europe/Asia call https://eu1analytics.churnzero.net/i
+            If not call https://analytics.churnzero.net/i
+            </summary>
+        </member>
+        <member name="P:ChurnZeroApiClient.Common.Settings.ApiSettings.AppKey">
+            <summary>
+            Every request must include your appKey which can be found on the Admin > AppKey Page.
+            </summary>
+        </member>
+    </members>
+</doc>

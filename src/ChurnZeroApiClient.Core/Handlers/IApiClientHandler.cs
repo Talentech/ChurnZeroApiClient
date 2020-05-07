@@ -1,5 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System.Runtime.CompilerServices;
+using System.Threading.Tasks;
 
+[assembly: InternalsVisibleTo("ChurnZeroApiClient.Lib")]
 namespace ChurnZeroApiClient.Core
 {
     internal interface IApiClientHandler
