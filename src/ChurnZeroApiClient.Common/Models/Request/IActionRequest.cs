@@ -5,6 +5,6 @@
         /// <summary>
         /// Action name from API
         /// </summary>
-        public string ActionName { get; } 
+        string ActionName { get; }
     }
 }
