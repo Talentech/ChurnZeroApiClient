@@ -74,13 +74,13 @@
              Requests can be made through your ChurnZero Implementation Specialist or by reaching out to support@churnzero.net.
             </summary>
         </member>
-        <member name="P:ChurnZeroApiClient.Common.Settings.ApiSettings.ApiBaseUrl">
+        <member name="P:ChurnZeroApiClient.Settings.ApiSettings.ApiBaseUrl">
             <summary>
             If you are located in Europe/Asia call https://eu1analytics.churnzero.net/i
             If not call https://analytics.churnzero.net/i
             </summary>
         </member>
-        <member name="P:ChurnZeroApiClient.Common.Settings.ApiSettings.AppKey">
+        <member name="P:ChurnZeroApiClient.Settings.ApiSettings.AppKey">
             <summary>
             Every request must include your appKey which can be found on the Admin > AppKey Page.
             </summary>

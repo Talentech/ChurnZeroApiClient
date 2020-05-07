@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ChurnZeroApiClient.Common.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Web;
 
@@ -49,9 +50,10 @@ namespace ChurnZeroApiClient.Core.Extensions
             foreach (var prop in model.GetType().GetProperties())
             {
                 var value = prop.GetValue(model);
+                var queryParamName = AttributeHelpers.GetQueryParamName<T>(prop.Name);
                 if (value != null)
                 {
-                    uri = uri.AddQueryParam(prop.Name, value);
+                    uri = uri.AddQueryParam(queryParamName, value);
                 }
             }
 

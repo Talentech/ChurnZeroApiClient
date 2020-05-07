@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("ChurnZeroApiClient.Lib")]
 [assembly: InternalsVisibleTo("ChurnZeroApiClient.Core")]
-namespace ChurnZeroApiClient.Common.Settings
+namespace ChurnZeroApiClient.Settings
 {
     internal class ApiSettings
     {

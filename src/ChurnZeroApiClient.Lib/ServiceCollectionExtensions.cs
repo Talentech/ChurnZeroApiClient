@@ -1,4 +1,4 @@
-﻿using ChurnZeroApiClient.Common.Settings;
+﻿using ChurnZeroApiClient.Settings;
 using ChurnZeroApiClient.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
