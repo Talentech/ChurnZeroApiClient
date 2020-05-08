@@ -264,3 +264,5 @@ __pycache__/
 
 /tools/
 code_coverage/
+
+/automation/tools
