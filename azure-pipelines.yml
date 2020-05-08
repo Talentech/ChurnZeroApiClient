@@ -1,0 +1,29 @@
+trigger:
+- master
+
+variables:
+  buildConfiguration: 'Release'
+
+stages:
+- stage: PublishProjects
+  jobs:
+  - job: PublishSingleProject
+    pool:
+      name: Hosted VS2017 
+    steps:
+
+    - task: PowerShell@2
+      displayName: 'Cake - build package'
+      inputs:
+        targetType: 'filePath'
+        filePath: '$(System.DefaultWorkingDirectory)/automation/build.ps1' 
+        workingDirectory: '$(System.DefaultWorkingDirectory)/automation'
+        failOnStderr: true      
+
+    - task: NuGetCommand@2
+      displayName: 'NuGet Push'
+      inputs:
+        command: push
+        packagesToPush: '$(System.DefaultWorkingDirectory)/automation/artifacts/lib/ChurnZeroApiClient.Lib.*.nupkg'
+        publishVstsFeed: '$(nugetFeed)'
+        allowPackageConflicts: true
