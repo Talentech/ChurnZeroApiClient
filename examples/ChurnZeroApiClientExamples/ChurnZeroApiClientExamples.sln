@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurnZeroApiClientExampleConsole", "ChurnZeroApiClientExampleConsole\ChurnZeroApiClientExampleConsole.csproj", "{299A3E48-C2DC-4A2E-9755-1E065AF04733}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChurnZeroApiClientExampleConsole", "ChurnZeroApiClientExampleConsole\ChurnZeroApiClientExampleConsole.csproj", "{299A3E48-C2DC-4A2E-9755-1E065AF04733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurnZeroApiClientExampleConsole.NET.V3.1", "ChurnZeroApiClientExampleConsole.NET.V3.1\ChurnZeroApiClientExampleConsole.NET.V3.1.csproj", "{39A9967E-1A8F-45A2-969A-475A12C4AEF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{299A3E48-C2DC-4A2E-9755-1E065AF04733}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{299A3E48-C2DC-4A2E-9755-1E065AF04733}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{299A3E48-C2DC-4A2E-9755-1E065AF04733}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39A9967E-1A8F-45A2-969A-475A12C4AEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39A9967E-1A8F-45A2-969A-475A12C4AEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39A9967E-1A8F-45A2-969A-475A12C4AEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39A9967E-1A8F-45A2-969A-475A12C4AEF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
