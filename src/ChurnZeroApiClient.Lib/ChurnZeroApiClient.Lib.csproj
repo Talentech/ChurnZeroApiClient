@@ -9,12 +9,17 @@
     <Description>.NET Standard API Client for ChurnZero API</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression></PackageLicenseExpression>
-    <Version>2.0.1</Version>
+    <Version>2.1.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>C:\Projekty\Talentech\ChurnZeroApiClient\src\ChurnZeroApiClient.Lib\ChurnZeroApiClient.Lib.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bootstrapper" Version="2.0.3.13" />
+    <PackageReference Include="Nancy" Version="1.4.4" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ChurnZeroApiClient.Core\ChurnZeroApiClient.Core.csproj" />
