@@ -23,13 +23,15 @@ namespace ChurnZeroApiClient
             return services;
         }
 
-        public static void AddChurnZeroApiClient(TinyIoCContainer container, IConfiguration configuration)
+        public static TinyIoCContainer AddChurnZeroApiClient(this TinyIoCContainer container, IConfiguration configuration)
         {
             var apiSettings = new ApiSettings();
             configuration.GetSection(ChurnZeroSettingsSectionName).Bind(apiSettings);
 
             container.Register<IApiClientHandler>(new ApiClientHandler(apiSettings));
-            container.Register<IChurnZeroClient, ChurnZeroClient>(); 
+            container.Register<IChurnZeroClient, ChurnZeroClient>();
+
+            return container;
         }
     }
 }
