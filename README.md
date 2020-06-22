@@ -45,6 +45,7 @@ var trackEventResponse = await serviceProvider.GetService<IChurnZeroClient>().Tr
 });
 ```
 
+
 ## Examples
  
 https://github.com/Talentech/ChurnZeroApiClient/tree/master/examples/ChurnZeroApiClientExamples
