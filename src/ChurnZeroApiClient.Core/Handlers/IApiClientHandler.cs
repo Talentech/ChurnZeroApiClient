@@ -8,5 +8,6 @@ namespace ChurnZeroApiClient.Core
     {
         Task<TOut> Post<TOut, TIn>(string requestUri, TIn model) where TOut : class;
         Task<TOut> Get<TOut, TIn>(TIn model) where TOut : class;
+        string ApiKey { get; }
     }
 }

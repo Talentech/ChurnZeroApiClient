@@ -8,6 +8,14 @@ namespace ChurnZeroApiClient
     {
         public ChurnZeroClient(IApiClientHandler apiClientHandler) : base(apiClientHandler) { }
 
+        public string ApiKey
+        {
+            get
+            {
+                return _apiClientHandler.ApiKey;
+            }
+        }
+
         public async Task<dynamic> TrackEventAsync(TrackEventRequest model)
         {
             return await _apiClientHandler.Get<dynamic, TrackEventRequest>(model);
