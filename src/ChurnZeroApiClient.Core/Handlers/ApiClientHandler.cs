@@ -24,6 +24,14 @@ namespace ChurnZeroApiClient.Core
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        public string ApiKey
+        {
+            get
+            {
+                return _apiSettings.AppKey;
+            }
+        }
+
         public async Task<TOut> Post<TOut, TIn>(string requestUri, TIn model) where TOut : class
         {
             try
