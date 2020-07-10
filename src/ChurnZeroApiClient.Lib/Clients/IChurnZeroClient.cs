@@ -29,5 +29,10 @@ namespace ChurnZeroApiClient
         /// <param name="model">IncrementAttributeRequest</param>
         /// <returns>dynamic json</returns>
         Task<dynamic> IncrementAttributeAsync(IncrementAttributeRequest model);
+
+        /// <summary>
+        /// Get Churnzero API Key
+        /// </summary>
+        string ApiKey { get; }
     }
 }
